@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*================================
+    ヘッダー
+================================*/
+header {
+  height: 640px;
+  width: 1440px;
+  margin: 0 auto;
+  background-color: rgba(232, 125, 125, 0.5);
+}
+
+header .head-nav ul {
+  list-style: none;
+}
+
+header .head-nav ul li a {
+  text-decoration: none;
+}
+
+/*================================
+    インフォメーション
+================================*/
+.info {
+  height: 543px;
+  width: 1100px;
+  margin: 0 auto;
+  background-color: rgba(232, 232, 125, 0.5);
+}
+
+.work {
+  height: 876px;
+  width: 1100px;
+  margin: 0 auto;
+  background-color: rgba(125, 232, 125, 0.5);
+}
+
+.foot-nav {
+  height: 570px;
+  width: 1440px;
+  margin: 0 auto;
+  background-color: rgba(125, 232, 232, 0.5);
+}
+
+footer {
+  height: 154px;
+  width: 1440px;
+  margin: 0 auto;
+  background-color: rgba(125, 125, 232, 0.5);
+}
+/*# sourceMappingURL=style.css.map */
