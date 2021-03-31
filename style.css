@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*================================
+    全体設定
+================================*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,6 +13,8 @@
 
 a:hover {
   opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 /*================================
@@ -72,7 +77,7 @@ header p {
 }
 
 /*================================
-    インフォメーション
+    お知らせ
 ================================*/
 .info {
   height: 543px;
@@ -169,13 +174,41 @@ header p {
   height: 47px;
 }
 
-.foot-nav {
-  height: 570px;
-  width: 1440px;
-  margin: 0 auto;
-  background-color: rgba(125, 232, 232, 0.5);
+.work .work-list {
+  text-align: center;
 }
 
+.work .work-list .work-list-btn {
+  margin-top: 80px;
+  display: inline-block;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  padding: 12px 40px;
+  font-size: 20px;
+}
+
+/*================================
+    リンク
+================================*/
+.link {
+  padding-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.link a {
+  width: calc(100% / 3);
+}
+
+.link a img {
+  width: 100%;
+}
+
+/*================================
+    フッター
+================================*/
 footer {
   height: 154px;
   width: 1440px;
