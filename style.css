@@ -119,11 +119,54 @@ header p {
   font-size: 17px;
 }
 
+/*================================
+    施工事例
+================================*/
 .work {
+  padding: 90px 0;
   height: 876px;
   width: 1100px;
   margin: 0 auto;
-  background-color: rgba(125, 232, 125, 0.5);
+}
+
+.work .work-title {
+  margin-bottom: 60px;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.work .work-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.work .work-container .work-case {
+  text-align: center;
+}
+
+.work .work-container .work-case h3 {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.work .work-container .work-case p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.work .work-container .work-case .building {
+  height: 280px;
+  width: 430px;
+}
+
+.work .work-container .work-case .more {
+  margin-top: 15px;
+  width: 300px;
+  height: 47px;
 }
 
 .foot-nav {

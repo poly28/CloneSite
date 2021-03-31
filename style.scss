@@ -1,10 +1,10 @@
-*{
+* {
 	box-sizing: border-box;
 }
-.wrap{
-	overflow:hidden;
+.wrap {
+	overflow: hidden;
 }
-a:hover{
+a:hover {
 	opacity: 0.5;
 }
 /*================================
@@ -16,17 +16,17 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	position : relative;
-	
-	.header-container{
-		display:flex;
+	position: relative;
+
+	.header-container {
+		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding-top: 30px;
 		margin: 0 auto;
 		max-width: 1100px;
-		
-		.header-logo{
+
+		.header-logo {
 			height: 60px;
 		}
 		.header-nav {
@@ -38,16 +38,16 @@ header {
 						text-decoration: none;
 						color: #000;
 						font-size: 18px;
-						display:inline-block;
+						display: inline-block;
 					}
 				}
 			}
 		}
 	}
 
-	p{
-		position:absolute;
-		top : 50%;
+	p {
+		position: absolute;
+		top: 50%;
 		left: 50%;
 		width: 100%;
 		transform: translate(-50%);
@@ -63,8 +63,8 @@ header {
 	height: 543px;
 	width: 1100px;
 	margin: 0 auto;
-	padding:90px 0;
-	.info-title{
+	padding: 90px 0;
+	.info-title {
 		margin-bottom: 60px;
 		font-size: 38px;
 		text-align: center;
@@ -74,24 +74,24 @@ header {
 		max-width: 700px;
 		margin: 0 auto;
 
-		li{
-			padding : 30px 0;
+		li {
+			padding: 30px 0;
 			border-bottom: 1px solid black;
-			a{
-				display : block;
-				color:black;
+			a {
+				display: block;
+				color: black;
 				text-decoration: none;
-				.date{
-					font-size : 18px;
+				.date {
+					font-size: 18px;
 				}
-				.border{
-					border:1px solid black;
+				.border {
+					border: 1px solid black;
 					display: inline-block;
 					padding: 5px 8px;
 					margin: 0 30px;
 					font-size: 11px;
 				}
-				.message{
+				.message {
 					font-size: 17px;
 				}
 			}
@@ -99,18 +99,47 @@ header {
 	}
 }
 
-
-
-
-
-
+/*================================
+    施工事例
+================================*/
 
 .work {
+	padding: 90px 0;
 	height: 876px;
 	width: 1100px;
 	margin: 0 auto;
-	background-color: hsla(120, 70%, 70%, 0.5);
+	.work-title {
+		margin-bottom: 60px;
+		font-size: 38px;
+		text-align: center;
+		margin-bottom: 90px;
+	}
+	.work-container {
+		display: flex;
+		justify-content: space-around;
+		.work-case {
+			text-align: center;
+			h3 {
+				font-size: 24px;
+				margin-top: 30px;
+			}
+			p {
+				font-size: 14px;
+				margin-top: 15px;
+			}
+			.building {
+				height: 280px;
+				width: 430px;
+			}
+			.more {
+				margin-top: 15px;
+				width: 300px;
+				height: 47px;
+			}
+		}
+	}
 }
+
 .foot-nav {
 	height: 570px;
 	width: 1440px;
