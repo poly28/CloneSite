@@ -32,7 +32,6 @@ header {
 		.header-nav {
 			.header-list {
 				display: flex;
-				list-style: none;
 				li {
 					padding-left: 60px;
 					a {
@@ -64,8 +63,48 @@ header {
 	height: 543px;
 	width: 1100px;
 	margin: 0 auto;
-	background-color: hsla(60, 70%, 70%, 0.5);
+	padding:90px 0;
+	.info-title{
+		margin-bottom: 60px;
+		font-size: 38px;
+		text-align: center;
+	}
+
+	.info-list {
+		max-width: 700px;
+		margin: 0 auto;
+
+		li{
+			padding : 30px 0;
+			border-bottom: 1px solid black;
+			a{
+				display : block;
+				color:black;
+				text-decoration: none;
+				.date{
+					font-size : 18px;
+				}
+				.border{
+					border:1px solid black;
+					display: inline-block;
+					padding: 5px 8px;
+					margin: 0 30px;
+					font-size: 11px;
+				}
+				.message{
+					font-size: 17px;
+				}
+			}
+		}
+	}
 }
+
+
+
+
+
+
+
 .work {
 	height: 876px;
 	width: 1100px;
