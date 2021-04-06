@@ -5,6 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="style.css" />
+		<!-- Material+Iconsの追加 -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
 		<title>蒼乃建設</title>
 	</head>
 	<body>
@@ -31,8 +37,11 @@
 							<li><a href="">お問い合わせ</a></li>
 						</ul>
 					</nav>
-					<div class="header-icon">
+					<!-- <div class="header-icon" id="open">
 						<img src="images\hamburger.svg" alt="ハンバーガーメニュー" />
+					</div> -->
+					<div class="sp-menu header-icon">
+						<span class="material-icons" id="open"> menu </span>
 					</div>
 					<!-- ヘッダーナビゲーションここまで -->
 				</div>
@@ -40,6 +49,18 @@
 				<!-- ファーストセンテンスここから -->
 				<p>街を作る。未来を作る。</p>
 				<!-- ファーストセンテンスここまで -->
+				<!-- ハンバーガーメニュー表示時のオーバーレイ -->
+				<div class="overlay">
+					<span class="material-icons" id="close"> close </span>
+					<nav>
+						<ul>
+							<li><a href="#">企業理念</a></li>
+							<li><a href="#">施工事例</a></li>
+							<li><a href="#">採用情報</a></li>
+							<li><a href="#">お問い合わせ</a></li>
+						</ul>
+					</nav>
+				</div>
 			</header>
 			<!-- ヘッダーここまで -->
 
@@ -142,5 +163,6 @@
 			</footer>
 			<!-- フッターここまで -->
 		</div>
+		<script src="/js/main.js"></script>
 	</body>
 </html>

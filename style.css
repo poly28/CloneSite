@@ -56,6 +56,7 @@ a:hover {
   header .header-container .header-icon {
     display: block;
     font-size: 28px;
+    cursor: pointer;
   }
   header p {
     position: absolute;
@@ -67,9 +68,72 @@ a:hover {
     text-align: center;
     font-size: 24px;
   }
+  .overlay {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 64px;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+  }
+  .overlay #close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  .overlay ul {
+    list-style: none;
+  }
+  .overlay ul li {
+    margin-top: 24px;
+    opacity: 0;
+    -webkit-transform: translateY(16px);
+            transform: translateY(16px);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  }
+  .overlay ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  .overlay.show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  .overlay.show li {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .overlay.show li:nth-child(1) {
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+  .overlay.show li:nth-child(2) {
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  .overlay.show li:nth-child(3) {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  .overlay.show li:nth-child(4) {
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
   /*================================
 		お知らせ
-================================*/
+	================================*/
   .info {
     width: 100%;
     margin: 0 auto;
@@ -285,6 +349,9 @@ a:hover {
             transform: translate(-50%);
     text-align: center;
     font-size: 48px;
+  }
+  .overlay {
+    display: none;
   }
   /*================================
 		お知らせ
