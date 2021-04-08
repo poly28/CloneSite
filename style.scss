@@ -46,7 +46,12 @@ a:hover {
 			.header-icon {
 				display: block;
 				font-size: 28px;
-				cursor: pointer;
+				#open {
+					cursor: pointer;
+					&.hide {
+						display: none;
+					}
+				}
 			}
 		}
 
@@ -62,13 +67,14 @@ a:hover {
 	}
 	.overlay {
 		position: fixed;
-		background-color: rgba(255, 255, 255, 0.7);
+		background-color: rgba(255, 255, 255, 0.9);
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		padding: 64px;
 		opacity: 0;
+		text-align: center;
 		pointer-events: none;
 		transition: opacity 0.6s;
 		#close {
@@ -113,10 +119,6 @@ a:hover {
 			}
 		}
 	}
-
-	// 	【Todo】
-	// ・メニュー展開時のリンクを中央揃えにする
-	// ・メニュー展開時の×の後ろのメニューアイコンを非表示にする
 
 	/*================================
 		お知らせ
